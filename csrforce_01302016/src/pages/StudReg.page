@@ -1,0 +1,128 @@
+<apex:page controller="StudentRegistration">
+  
+ 
+  <script>
+  function verifyForm() {
+  alert('validation');
+               
+               
+                    }  /*    userNameCnt.value=userNameCnt.value.trim();
+                    userEmailCnt.value=userEmailCnt.value.trim();
+                    userIdCnt.value=userIdCnt.value.trim();
+                    document.getElementById('ItemDetailsgrid').innerHTML="";
+                    searchForPDA();
+                    */
+  
+  
+  
+  </script>
+  <apex:form >
+   <apex:pageBlock title="Student Registration">
+        <table cellpadding="0" cellspacing="0" border="0" width="700">
+               <tr height="20">
+                   <td>&nbsp;</td>
+              </tr>
+  
+              <tr height="20">
+                    <td align="right" style="padding-right: 10px;"><b>*</b> Mandatory</td>
+                </tr>
+              <tr>
+                   <td valign="top" style="padding-left: 35px;">
+                  
+                   <table cellpadding="0" cellspacing="0" border="0" width="650">
+                   <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                            Student Name</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                              <apex:inputText value="{!m_studentName}"/></td>
+                
+                        <td width="150" style="padding-left: 55px;"><b>Enter
+                       Fathers Name</b></td>
+                        <td width="35">&nbsp;</td>
+                        <td width="415">
+                        <apex:inputText value="{!m_FathersName}"/></td>
+                   </tr>
+                   <tr>
+                        <td width="150" style="padding-left: 55px;"><b>Enter
+                        G section</b></td>
+                        <td width="35">&nbsp;</td>
+                        <td width="415">
+                           <apex:inputText value="{!m_GSection}"/></td>
+                    </tr>
+                      <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                            DOB</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                                <apex:inputText value="{!m_DOB}"/></td>
+                        </tr>
+                       <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                            Sex</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                              <apex:inputText value="{!m_Sex}"/></td>
+                      </tr> 
+                        
+                        
+                        
+                        
+                         <tr>
+                                <td width="150" style="padding-left: 55px;"><b>Enter
+                                Hno</b></td>
+                                <td width="35">&nbsp;</td>
+                                <td width="415">
+                                      <apex:inputText value="{!m_Hno}"/></td>
+                         </tr>
+                        <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                           Street</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                            <apex:inputText value="{!m_Street}"/></td>
+                      </tr>
+                       <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                            City</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                            <apex:inputText value="{!m_City}"/></td>
+                       </tr>
+                      <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                            Nationality</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                            <apex:inputText value="{!m_Nationality}"/></td>
+                       </tr>
+                       
+                      
+                     
+                      
+                        <tr>
+                            <td width="150" style="padding-left: 55px;"><b>Enter
+                            Sex</b></td>
+                            <td width="35">&nbsp;</td>
+                            <td width="415">
+                             <apex:commandButton onclick="javascript:verifyForm()" 
+                                 action="{!InsertNewRecord}" value="save" />
+                              </td>
+                      </tr>
+                      
+                      
+ 
+  
+                  </table>
+                  </td>
+  </tr>
+ 
+  
+  </table>
+   
+  
+  </apex:pageBlock>
+  </apex:form>
+  
+  
+</apex:page>

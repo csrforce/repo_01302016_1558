@@ -1,0 +1,22 @@
+<apex:page controller="SampStudCntrl">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!lstStud}" var="rec" >
+            
+            <apex:column >
+                      <apex:outputLink value="edit"></apex:outputLink>  
+                   </apex:column>
+                   
+                   <apex:column >
+                       <apex:inputText value="{!rec.Sname__c}"/>
+                      </apex:column> 
+                   
+                   
+            </apex:pageBlockTable>
+        
+        </apex:pageBlock>
+
+
+    </apex:form>
+  
+</apex:page>

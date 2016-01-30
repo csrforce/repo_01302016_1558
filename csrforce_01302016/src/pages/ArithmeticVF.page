@@ -1,0 +1,12 @@
+<apex:page controller="Arithmetic">
+   <apex:form >
+      <apex:inputtext value="{!firstNo}" />
+      <apex:inputText value="{!secondNo}" />
+      <p>
+      </p>
+      <apex:commandButton value="Add"    action="{!add}"/>
+      <apex:inputtext value="{!result}"  />
+   
+   
+   </apex:form>
+</apex:page>

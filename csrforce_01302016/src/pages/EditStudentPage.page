@@ -1,0 +1,34 @@
+<apex:page controller="EditStudent">
+<apex:form >
+<apex:pageBlock id="blocktable">
+    <apex:pageBlockTable value="{!Student}" var="e" id="tble" >
+    <apex:column headerValue="Action" >
+    <apex:commandLink value="edit" action="{!editStudent}">
+    <apex:param name="empid" value="{!e.StudId}"/>
+    </apex:commandLink>
+    </apex:column>
+    <apex:column headerValue="Student Name" >
+    <apex:outputtext value="{!e.StudentName}" rendered="{!e.textMode}"/> 
+    <apex:inputText value="{!e.StudentName}" rendered="{!e.editMode}"/>
+    
+      </apex:column>
+    <apex:column headerValue="Fathers Name" >
+    <apex:outputtext value="{!e.FathersName}" rendered="{!e.textMode}"/> 
+    <apex:inputText value="{!e.FathersName}" rendered="{!e.editMode}"/>
+    </apex:column>
+    
+    <apex:column headerValue="Date of Birth" >
+    <apex:outputtext value="{!e.DOB}" rendered="{!e.textMode}"/> 
+    <apex:inputText value="{!e.DOB}" rendered="{!e.editMode}"/>
+    </apex:column>
+    
+    <apex:column headerValue="GSection" >
+    <apex:outputtext value="{!e.GSection}" rendered="{!e.textMode}"/> 
+    <apex:inputText value="{!e.GSection}" rendered="{!e.editMode}"/>
+    </apex:column>
+   
+     
+    </apex:pageBlockTable>
+    </apex:pageBlock>
+    </apex:form>
+</apex:page>

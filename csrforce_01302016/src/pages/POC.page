@@ -1,0 +1,14 @@
+<apex:page StandardController="Course__c" extensions="POCCntrlr">
+  <apex:form >
+   <apex:pageMessages />
+   <p>Provide students Data per record in a new line in the given below Text Area</p>
+   <br/>
+   
+   <apex:inputtextarea rows="10" cols="40"/>
+    <br/>
+   <apex:commandButton value="Save"/>
+    </apex:form>
+ 
+ <apex:relatedList list="students__r"/>
+
+</apex:page>

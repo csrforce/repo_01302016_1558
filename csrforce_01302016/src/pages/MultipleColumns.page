@@ -1,0 +1,15 @@
+<apex:page controller="MultipleColumns" >
+<apex:form >
+
+      <apex:repeat value="{!lstlstAccts}" var="lst">
+          <apex:repeat value="{!lst}" var="slst">
+               {slst.name}
+      
+           </apex:repeat>
+      </apex:repeat>
+
+
+</apex:form>
+  
+  
+</apex:page>

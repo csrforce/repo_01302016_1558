@@ -1,0 +1,19 @@
+<apex:page Controller="BulkUploadCSVData"    sidebar="false" >
+     <apex:form >
+      <apex:sectionHeader title="Upload  data from CSV file"/>
+      <apex:pagemessages />
+          <apex:pageBlock >
+                 <center>
+                  <apex:inputFile value="{!contentFile}" filename="{!nameFile}"/> 
+                  <apex:commandButton value="Upload File" action="{!ReadFile}" id="theButton" style="width:70px;"/>
+                 
+                 </center> 
+                 <br/><br/><br/>
+                
+                 
+                 
+          </apex:pageBlock>
+       
+    </apex:form>   
+   
+</apex:page>
